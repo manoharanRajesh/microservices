@@ -1,0 +1,15 @@
+spring:
+  config:
+    import: optional:configserver:http://user:password@localhost:8888
+  application:
+    name: registry
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    registerWithEureka: false
+    register-with-eureka: false
+    fetchRegistry: false
+    server:
+      waitTimeInMsWhenSyncEmpty: 0
